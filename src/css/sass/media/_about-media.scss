@@ -1,0 +1,33 @@
+// Start Info-Media
+@media (max-width: 991px) {
+    .info {
+        .sec-cont {
+            flex-direction: column;
+            .image {
+                width: 100%;
+                img {
+                    max-height: 700px;
+                }
+            }
+            .infos {
+                p {
+                    margin: 20px 0 40px;
+                }
+            }
+        }
+    }
+}
+@include media(mobile) {
+    .info {
+        .sec-cont {
+            .infos {
+                text-align: center;
+                .box {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// End Info-Media

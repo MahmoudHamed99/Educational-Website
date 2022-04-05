@@ -1,0 +1,107 @@
+footer {
+    padding-top: $padd-top;
+    padding-bottom: 30px;
+    background-color: $main-color;
+    .footer-cont {
+        @include grid-div(200px, 1fr);
+        .col {
+            h3 {
+                margin: 0 0 40px;
+                color: #EEE;
+            }
+            ul {
+                li {
+                    margin-bottom: 25px;
+                    a {
+                        color: $footer-color;
+                        transition: $trans;
+                        &:hover {
+                            color: #EEE;
+                        }
+                    }
+                }
+            }
+            p {
+                color: $footer-color;
+                margin: 0 0 20px;
+            }
+            form {
+                max-width: 100%;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                input {
+                    padding: 10px 15px;
+                    border: none;
+                    background-color: #39445e;
+                    color: #EEE;
+                }
+                input::placeholder {
+                    color: #EEE;
+                }
+                input[type="submit"] {
+                    width: 110px;
+                    @extend %center-ele;
+                    background-color: $sec-color;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+.copyright {
+    padding: 10px 0;
+    background-color: #060c1a;
+    .cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            color: #EEE;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        ul {
+            display: flex;
+            gap: 10px;
+            li {
+                i {
+                    width: 35px;
+                    height: 35px;
+                    @extend %center-ele;
+                    font-size: 1.2em;
+                    background-color: rgba($color: #FFF, $alpha: 0.25);
+                    backdrop-filter: blur(4px);
+                    color: #EEE;
+                    cursor: pointer;
+                    transition: $trans;
+                }
+                &:nth-of-type(1) {
+                    i {
+                        &:hover {
+                            background-color: #1877f2;
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    i {
+                        &:hover {
+                            background-color: #c13584;
+                        }
+                    }
+                }
+                &:nth-of-type(3) {
+                    i {
+                        &:hover {
+                            background-color: #0077b5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Start Footer-Media
+@import "../media/footer-media";
+// End Footer-Media

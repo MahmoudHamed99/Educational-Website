@@ -1,0 +1,69 @@
+// Start Contact-Media
+@media (max-width: 991px) {
+    .contact {
+        .contact-cont {
+            flex-direction: column;
+            gap: 80px;
+        }
+    }
+}
+
+@include media(mobile) {
+    .contact {
+        .contact-cont {
+            .touch {
+                text-align: center;
+                .title {
+                    .title-det {
+                        flex-direction: column;
+                        justify-content: center;
+                        i {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .phone {
+                    .phone-det {
+                        flex-direction: column;
+                        justify-content: center;
+                        i {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .support {
+                    .support-det {
+                        flex-direction: column;
+                        justify-content: center;
+                        i {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .follow {
+                    ul {
+                        justify-content: center;
+                    }
+                }
+            }
+            .connect {
+                .connect-info {
+                    text-align: center;
+                }
+                form {
+                    input:nth-of-type(1) {
+                        flex-basis: 100%;
+                    }
+                    input:nth-of-type(2) {
+                        flex-basis: 100%;
+                    }
+                    button {
+                        width: 100%;
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Contact-Media

@@ -1,0 +1,44 @@
+// Start Post
+.post {
+    @extend %sec-padd;
+    .post-cont {
+        max-width: 800px;
+        margin: auto;
+        h3 {
+            margin: 0 0 50px;
+            color: #333;
+            text-align: center;
+            font-size: 1.7em;
+            line-height: 1.4;
+            letter-spacing: 1.3;
+        }
+        .post-img {
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            margin: 15px 0;
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        a {
+            display: block;
+            width: fit-content;
+            margin-top: 40px;
+            padding: 10px 15px;
+            background-color: $main-color;
+            color: #EEE;
+            border-radius: 3px;
+            transition: $trans;
+            &:hover {
+                background-color: $sec-color;
+                color: $main-color;
+            }
+        }
+    }
+}
+// End Post

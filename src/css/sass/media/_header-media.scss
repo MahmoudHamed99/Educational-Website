@@ -1,0 +1,36 @@
+@include media(small) {
+    header {
+        .intro {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .btn-box {
+                .blue,
+                .yellow {
+                    padding: 11px 22px;
+                }
+            }
+        }
+    }
+}
+@include media(mobile) {
+    header {
+        .intro {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .btn-box {
+                .blue,
+                .yellow {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}

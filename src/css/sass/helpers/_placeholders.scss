@@ -1,0 +1,21 @@
+// Centering Element
+%center-ele {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Overlay
+%overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Padding
+%sec-padd {
+    padding-top: $padd-top;
+    padding-bottom: $padd-bottom;
+}

@@ -1,0 +1,27 @@
+@media (max-width: 991px) {
+    .blog {
+        .blog-cont {
+            flex-direction: column;
+            .posts {
+                flex-basis: 100%;
+            }
+            .cats {
+                margin-top: 100px;
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+@include media(mobile) {
+    .blog {
+        .blog-cont {
+            .cats {
+                ul {
+                    li {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}

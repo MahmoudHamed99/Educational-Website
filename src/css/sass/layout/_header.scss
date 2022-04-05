@@ -1,0 +1,58 @@
+// Start Header
+header {
+    height: calc(100vh - 84.4px);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)) ,url("../images/bgd1.jpg");
+    background-size: cover;
+    background-position: center;
+    @extend %center-ele;
+    .intro {
+        width: 1000px;
+        text-align: center;
+        position: relative;
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #EEE;
+        }
+        p {
+            width: 80%;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #EEE;
+        }
+        .btn-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .blue,
+            .yellow {
+                width: fit-content;
+                padding: 13px 25px;
+                color: white;
+                font-weight: bold;
+                border-radius: 3px;
+                transition: $trans;
+            }
+            .blue {
+                background-color: $main-color;
+                &:hover {
+                    background-color: #EEE;
+                    color: $main-color;
+                }
+            }
+            .yellow {
+                background-color: $sec-color;
+                &:hover {
+                    background-color: #EEE;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+// Start Header
+
+// Start Header-Media
+@import "../media/header-media";
+// End Header-Media

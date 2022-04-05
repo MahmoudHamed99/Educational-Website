@@ -1,0 +1,226 @@
+// Start Features
+.features {
+    @extend %sec-padd;
+    .boxs-cont {
+        @include grid-div(300px, 30px);
+        .box {
+            padding: 30px;
+            background-color: #F5F5F5;
+            i {
+                color: $main-color;
+                font-size: 2.3em;
+            }
+            h3 {
+                margin: 15px 0;
+                color: $main-color;
+                font: {
+                    size: 1.5em;
+                    weight: 600;
+                }
+            }
+            p {
+                margin: 0;
+                color: $text-color;
+                font-size: 1em;
+            }
+        }
+    }
+}
+// End Features
+
+// Start Courses
+.courses {
+    @extend %sec-padd;
+    .boxs-cont {
+        @include grid-div(300px, 30px);
+        .box {
+            position: relative;
+            background-color: #F5F5F5;
+            &::before {
+                content: "$49.99";
+                position: absolute;
+                right: 20px;
+                bottom: 78px;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                font-weight: 600;
+                @extend %center-ele;
+                background-color: $main-color;
+                color: #EEE;
+            }
+            img {
+                width: 100%;
+                height: 200px;
+                cursor: pointer;
+            }
+            .info {
+                padding: 20px;
+                p {
+                    margin: 5px 0 10px;
+                    color: #111;
+                    font: {
+                        size: 1.1em;
+                        weight: 600;
+                    }
+                }
+                p.date {
+                    margin: 0;
+                    color: #777;
+                    font-size: 0.9em;
+                }
+                .rate {
+                    display: flex;
+                    gap: 10px;
+                    ul {
+                        display: flex;
+                        gap: 5px;
+                        li {
+                            i {
+                                color: $sec-color;
+                            }
+                        }
+                    }
+                    span {
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Courses
+
+// Start Register
+.register {
+    padding-top: $padd-top;
+    padding-bottom: $padd-bottom;
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)) ,url("../images/bgd2.jpg");
+    background-size: cover;
+    background-position: center;
+    .container {
+        height: 100%;
+        .sec-cont {
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .counter {
+                p {
+                    margin: 0;
+                    font-size: 1em;
+                    color: #EEE;
+                    font-weight: 600;
+                }
+                h2 {
+                    margin: 10px 0 50px;
+                    font-size: 2em;
+                    color: #EEE;
+                }
+                .count {
+                    @extend %center-ele;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    .box {
+                        width: 90px;
+                        height: 80px;
+                        @extend %center-ele;
+                        flex-direction: column;
+                        background-color: rgba($color: #FFF, $alpha: 0.25);
+                        backdrop-filter: blur(4px);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        border-radius: 8px;
+                        span {
+                            text-align: center;
+                            display: block;
+                            color: #EEE;
+                            font-weight: 600;
+                            &:first-of-type {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                max-width: 400px;
+                padding: 20px 40px;
+                background-color: white;
+                border-radius: 5px;
+                h3 {
+                    margin: 40px 0 30px;
+                    text-align: center;
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 17px;
+                }
+                input[type="submit"] {
+                    width: fit-content;
+                    margin: 20px 0;
+                    padding: 10px 20px;
+                    background-color: $sec-color;
+                    color: white;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+// End Register
+
+// Start Experts
+.experts {
+    @extend %sec-padd;
+    .box-cont {
+        @include grid-div(250px, 30px);
+        .box {
+            padding: 40px 30px;
+            background-color: #F5F5F5;
+            text-align: center;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            h3 {
+                color: $main-color;
+                margin: 0;
+            }
+            p {
+                margin: 10px 0 15px;
+                color: #555;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                li {
+                    i {
+                        width: 35px;
+                        height: 35px;
+                        @extend %center-ele;
+                        border: 1px solid $main-color;
+                        color: $main-color;
+                        transition: $trans;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: $main-color;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Experts
+
+// Start Home-Media
+@import "../media/home-media";
+// End Home-Media

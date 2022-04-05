@@ -1,0 +1,40 @@
+include pug/components/_comps
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Educational Website
+        include pug/components/_styles
+    body
+        //- Start Navbar
+        nav
+            .container
+                .logo
+                    img(src="images/logo.jpg", alt="")
+                i(class="fas fa-bars fa-2x")
+                ul.links
+                    i(class="fas fa-times fa-2x")
+                    li
+                        a(href="index.html") Home
+                    li
+                        a(href="about.html") About
+                    li
+                        a(href="blog.html") Blog
+                    li.active
+                        a(href="courses.html") Courses
+                    li
+                        a(href="contact.html") Contact
+                    li
+                        button Join For Free
+        //- End Navbar
+
+        //- Start Header
+        header.header-two
+            h1 Enroll Our Popular Courses And Skill Up
+        //- End Header
+
+        include pug/layout/_course
+        include pug/layout/_footer
+        include pug/components/_scripts

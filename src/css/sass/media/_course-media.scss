@@ -1,0 +1,73 @@
+@media (max-width: 991px) {
+    .course {
+        .course-cont {
+            flex-direction: column;
+            .course-info {
+                flex-basis: 100%;
+                .details {
+                    h2 {
+                        font-size: 1.3em;
+                    }
+                    span {
+                        bottom: 120px;
+                        padding: 10px 15px;
+                    }
+                }
+                .learn {
+                    ul {
+                        li {
+                            display: flex;
+                            gap: 5px;
+                            span {
+                                display: block;
+                                padding: 12px 0;
+                                color: #666;
+                                line-height: 1.7;
+                            }
+                            i {
+                                color: #654CE4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media(mobile) {
+    .course {
+        .course-cont {
+            flex-direction: column;
+            .course-info {
+                flex-basis: 100%;
+                .details {
+                    h2 {
+                        font-size: 1.2em;
+                    }
+                    span {
+                        bottom: 130px;
+                        padding: 10px 15px;
+                        font-size: 1em;
+                    }
+                }
+                .learn {
+                    ul {
+                        li {
+                            display: flex;
+                            gap: 5px;
+                            span {
+                                display: block;
+                                padding: 12px 0;
+                                color: #666;
+                                line-height: 1.7;
+                            }
+                            i {
+                                color: #654CE4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

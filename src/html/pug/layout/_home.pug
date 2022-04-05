@@ -1,0 +1,152 @@
+//- Start Features
+section.features
+    .container
+        +main-head("Awesome Feature")
+        .boxs-cont
+            .box
+                i(class="fas fa-graduation-cap")
+                h3 Scholarship Facility
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, repudiandae!
+            .box
+                i(class="fas fa-stamp")
+                h3 Sell Online Course
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, repudiandae!
+            .box
+                i(class="fas fa-certificate")
+                h3 Global Certification
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, repudiandae!
+//- End Features
+
+//- Start Courses
+section.courses
+    .container
+        +main-head("Our Popular Courses")
+        .boxs-cont
+            .box
+                img(src="images/courses1.png", alt="")
+                .info
+                    p.date updated 21/8/2021
+                    p JavaScript Beginner Course
+                    .rate
+                        ul
+                            - for (var i = 1 ; i <= 5 ; i++)
+                                li: i(class="fas fa-star")
+                        span (239)
+            .box
+                img(src="images/courses2.jpg", alt="")
+                .info
+                    p.date updated 21/8/2021
+                    p HTML &amp; CSS Beginner Course
+                    .rate
+                        ul
+                            - for (var i = 1 ; i <= 5 ; i++)
+                                li: i(class="fas fa-star")
+                        span (239)
+            .box
+                img(src="images/courses3.jpg", alt="")
+                .info
+                    p.date updated 21/8/2021
+                    p Python Beginner Course
+                    .rate
+                        ul
+                            - for (var i = 1 ; i <= 5 ; i++)
+                                li: i(class="fas fa-star")
+                        span (239)
+            .box
+                img(src="images/courses4.jpeg", alt="")
+                .info
+                    p.date updated 21/8/2021
+                    p Web Design Crash Course
+                    .rate
+                        ul
+                            - for (var i = 1 ; i <= 5 ; i++)
+                                li: i(class="fas fa-star")
+                        span (239)
+            .box
+                img(src="images/courses5.jpg", alt="")
+                .info
+                    p.date updated 21/8/2021
+                    p Web Development Crash Course
+                    .rate
+                        ul
+                            - for (var i = 1 ; i <= 5 ; i++)
+                                li: i(class="fas fa-star")
+                        span (239)
+            .box
+                img(src="images/courses6.jpg", alt="")
+                .info
+                    p.date updated 21/8/2021
+                    p React Beginner Course
+                    .rate
+                        ul
+                            - for (var i = 1 ; i <= 5 ; i++)
+                                li: i(class="fas fa-star")
+                        span (239)
+//- End Courses
+
+//- Start Register
+section.register
+    .container
+        .sec-cont
+            .counter
+                p Get 100 Online Courses For Free
+                h2 Register To Get It
+                .count
+                    .box
+                        span.days
+                        span Days
+                    .box
+                        span.hrs
+                        span Hours
+                    .box
+                        span.mins
+                        span Mins
+                    .box
+                        span.secs
+                        span Secs
+            form
+                h3 Create Free Account NOW!
+                input(type="text", placeholder="Name")
+                input(type="email", placeholder="Email")
+                input(type="text", placeholder="Number")
+                input(type="submit", value="Register")
+//- End Register
+
+//- Start Experts
+section.experts
+    .container
+        +main-head("Community Experts")
+        .box-cont
+            .box
+                img(src="images/person1.jpg", alt="")
+                h3 Ali Mohamed
+                p Python &amp; Algorithm Expert
+                ul
+                    li: i(class="fab fa-facebook-f")
+                    li: i(class="fab fa-instagram")
+                    li: i(class="fab fa-linkedin")
+            .box
+                img(src="images/person2.jpg", alt="")
+                h3 Nour
+                p Data Analysis Expert
+                ul
+                    li: i(class="fab fa-facebook-f")
+                    li: i(class="fab fa-instagram")
+                    li: i(class="fab fa-linkedin")
+            .box
+                img(src="images/person3.jpg", alt="")
+                h3 Ibrahim Ahmed
+                p Full Stack Developer
+                ul
+                    li: i(class="fab fa-facebook-f")
+                    li: i(class="fab fa-instagram")
+                    li: i(class="fab fa-linkedin")
+            .box
+                img(src="images/person4.jpg", alt="")
+                h3 Wael Hossam
+                p Design Expert
+                ul
+                    li: i(class="fab fa-facebook-f")
+                    li: i(class="fab fa-instagram")
+                    li: i(class="fab fa-linkedin")
+//- End Experts

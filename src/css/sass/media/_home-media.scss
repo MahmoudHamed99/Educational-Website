@@ -1,0 +1,15 @@
+// Start Register-Media
+@media (max-width: 991px) {
+    .register {
+        .container {
+            .sec-cont {
+                flex-direction: column;
+                gap: 100px;
+                .counter {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// End Register-Media

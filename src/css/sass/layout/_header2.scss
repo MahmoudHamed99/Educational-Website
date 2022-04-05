@@ -1,0 +1,18 @@
+// Start Header2
+header.header-two {
+    height: 70vh;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)) ,url("../images/bgd3.jpg");
+    background-size: cover;
+    background-position: center;
+    @extend %center-ele;
+    h1 {
+        color: #EEE;
+        font-size: 3em;
+        letter-spacing: 1.5;
+    }
+}
+// Start Header2
+
+// Start Header2-Media
+@import "../media/header2-media";
+// End Header2-Media
